@@ -1,0 +1,13 @@
+:verbose: true
+development:
+  :concurrency: 5
+production:
+  :concurrency: 20
+:queues:
+  - critical
+  - default
+  - mailers
+  - low
+:timeout: 60
+
+# More: https://github.com/mperham/sidekiq/blob/master/examples/config.yml
